@@ -36,5 +36,7 @@ public class ApplicationTest {
     @Test
     public void romain_unites() {
 	assert_en_romain(0,"");
+	assert_en_romain(1,"I");
+	assert_en_romain(2,"II");
     }
 }
