@@ -11,25 +11,28 @@ public class NombreDecimal {
     public NombreDecimal(int n) {
 	this.valeur = n;
     }
+    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX","X","XI"};
 
+    /* public String en_romain() {
+	String[] chiffresRomain = new String [10];
+	
+	chiffresRomain[0]="";
+	chiffresRomain[1]="I";
+	chiffresRomain[2]="II";
+	chiffresRomain[3]="III";
+	chiffresRomain[4]="IV";
+	chiffresRomain[5]="V";
 
-	public String en-romain(){
-		String[] chiffresRomain = new String [11];
-		
-		chiffresRomain[0]="";
-		chiffresRomain[1]="I";
-		chiffresRomain[2]="II";
-		chiffresRomain[3]="III";
-		chiffresRomain[4]="IV";
-		chiffresRomain[5]="V";
-		chiffresRomain[6]="VI";
-		chiffresRomain[7]="VII";
-		chiffresRomain[8]="VIII";
-		chiffresRomain[9]="IX";
-		chiffresRomain[10]="X";
-		
-		return chiffresRomain[this.valeur];
-		
-	}
+	return chiffreRomain[this.valeur];
+	}*/
+    
+    public String en_romain(){
+	return en_romain_unite(valeur);
+    }
+
+    public String en_romain_unite(int n){
+	return table_unites[n];
+    }
+
 }
 
