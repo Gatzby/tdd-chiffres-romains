@@ -9,7 +9,8 @@ public class NombreDecimal {
     public int valeur;
     public NombreDecimal() {}
     public NombreDecimal(int n) {this.valeur = n; }
-    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XX"};
+    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX"};
+    public static String[] table_dizaines={"X","XX","XXX","XL","L","LX","LXX","LXXX","XC"};
     
     
     public String en_romain(){
@@ -17,7 +18,11 @@ public class NombreDecimal {
     }
 
     public String en_romain_unite(int n){
-	return table_unites[n];
+		int unite= n%10;
+		int dizaine = n- unite;
+		String chiffreR = table_dizaines[dizaine/10]+table_unites[unite];
+		
+		return chiffreR;
     }
 
 }
