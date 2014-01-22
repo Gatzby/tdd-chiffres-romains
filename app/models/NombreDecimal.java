@@ -8,23 +8,9 @@ public class NombreDecimal {
     @Required
     public int valeur;
     public NombreDecimal() {}
-    public NombreDecimal(int n) {
-	this.valeur = n;
-    }
-    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX","X","XI"};
-
-    /* public String en_romain() {
-	String[] chiffresRomain = new String [10];
-	
-	chiffresRomain[0]="";
-	chiffresRomain[1]="I";
-	chiffresRomain[2]="II";
-	chiffresRomain[3]="III";
-	chiffresRomain[4]="IV";
-	chiffresRomain[5]="V";
-
-	return chiffreRomain[this.valeur];
-	}*/
+    public NombreDecimal(int n) {this.valeur = n; }
+    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XX"};
+    
     
     public String en_romain(){
 	return en_romain_unite(valeur);
