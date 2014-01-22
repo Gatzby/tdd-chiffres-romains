@@ -12,17 +12,24 @@ public class NombreDecimal {
 	this.valeur = n;
     }
 
-    public String en_romain() {
+
+	public String en-romain(){
+		String[] chiffresRomain = new String [11];
 		
-		switch(valeur){
-			case 1 : return "I";
-			case 2 : return "II";
-			case 3 : return "III";
-			case 4 : return "IV";
-			case 5 : return "V";
-			default:return "";
-		}
-	
-    }
+		chiffresRomain[0]="";
+		chiffresRomain[1]="I";
+		chiffresRomain[2]="II";
+		chiffresRomain[3]="III";
+		chiffresRomain[4]="IV";
+		chiffresRomain[5]="V";
+		chiffresRomain[6]="VI";
+		chiffresRomain[7]="VII";
+		chiffresRomain[8]="VIII";
+		chiffresRomain[9]="IX";
+		chiffresRomain[10]="X";
+		
+		return chiffresRomain[this.valeur];
+		
+	}
 }
 
