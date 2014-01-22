@@ -11,7 +11,7 @@ public class NombreDecimal {
     public NombreDecimal(int n) {
 	this.valeur = n;
     }
-    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX","X"};
+    public static String[] table_unites={"","I","II","III","IV","V","VI","VII","VIII","IX","X","XI"};
 
     /* public String en_romain() {
 	String[] chiffresRomain = new String [10];
